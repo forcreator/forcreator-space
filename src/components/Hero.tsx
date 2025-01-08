@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
-            href="https://www.tools.forcreator.space"
+            href="https://tools.forcreator.space"
             className="inline-flex items-center px-8 py-4 rounded-full bg-white/90 dark:bg-white 
               text-purple-900 font-semibold hover:bg-opacity-100 transition-all transform hover:scale-105 
               shadow-lg hover:shadow-xl"

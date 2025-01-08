@@ -55,7 +55,7 @@ export default function Tools() {
 
         <div className="mt-10 sm:mt-12 text-center">
           <a 
-            href="tools.forcreator.space" 
+            href="https://tools.forcreator.space" 
             className="inline-flex items-center text-purple-600 dark:text-purple-400 
             hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base"
           >

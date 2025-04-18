@@ -1,0 +1,68 @@
+# robots.txt for https://forcreator.space
+
+# Allow all crawlers
+User-agent: *
+
+# Allow crawling of all content
+Allow: /
+Allow: /tools
+Allow: /spaces
+Allow: /about
+
+# Sitemap location
+Sitemap: https://forcreator.space/sitemap.xml
+
+# Prevent crawling of development/system files
+Disallow: /dist/
+Disallow: /build/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+Disallow: /*.map$
+Disallow: /*.lock$
+
+# Prevent crawling of error pages
+Disallow: /404
+Disallow: /500
+Disallow: /error
+
+# Prevent crawling of authentication pages
+Disallow: /login
+Disallow: /signup
+Disallow: /reset-password
+
+# Prevent crawling of test/development environments
+Disallow: /dev/
+Disallow: /test/
+Disallow: /staging/
+
+# Crawl-delay to prevent server overload (10 second delay between requests)
+Crawl-delay: 10
+
+# Additional rules for specific bots
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Rules for Google bots
+User-agent: Googlebot
+Allow: /*.js$
+Allow: /*.css$
+Allow: /images/
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Disallow: /icons/ 
